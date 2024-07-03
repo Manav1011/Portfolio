@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Azonix';
+    src: url('/fonts/Azonix.otf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+
+@font-face {
+    font-family: 'MoonLight';
+    src: url('/fonts/MoonLight.otf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+@font-face {
+    font-family: 'NunitoSans';
+    src: url('/fonts/NunitoSans.ttf') format('opentype');
+    font-weight: bold;
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+@font-face {
+    font-family: 'NunitoSansItalic';
+    src: url('/fonts/NunitoSansItalic.ttf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+@font-face {
+    font-family: 'MoonLight2';
+    src: url('/fonts/MoonLight2.otf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+@font-face {
+    font-family: 'dosislight';
+    src: url('/fonts/dosis.light.ttf') format('opentype');    
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+@font-face {
+    font-family: 'OSWALD';
+    font-weight: 300;
+    src: url('/fonts/OSWALD.ttf') format('opentype');    
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+
+@font-face {
+    font-family: "oswald", serif;
+    src: url('/fonts/oswald.ttf') format('opentype');
+    /* font-weight: 200; */
+    /* font-size: medium; */
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+
+@font-face {
+    font-family: 'variable';
+    src: url('/fonts/VariableFont_wght.ttf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+
+@font-face {
+    font-family: 'Baskerville';
+    src: url('/fonts/LibreBaskerville-Regular.ttf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+@font-face {
+    font-family: 'JustAnotherHand';
+    font-weight: lighter;
+    src: url('/fonts/JustAnotherHand-Regular.ttf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+
+@font-face {
+    font-family: 'Garamond';    
+    src: url('/fonts/EBGaramond-VariableFont_wght.ttf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+
+@font-face {
+    font-family: 'Roboto Regular';    
+    src: url('/fonts/Roboto-Regular.ttf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+@font-face {
+    font-family: 'Anton';    
+    src: url('/fonts/Anton-Regular.ttf') format('opentype');    
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+@font-face {
+    font-family: 'BebasNeue';    
+    src: url('/fonts/BebasNeue-Regular.ttf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+@font-face {
+    font-family: 'Rajdhani';    
+    src: url('/fonts/Rajdhani-Light.ttf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+@font-face {
+    font-family: 'Rajdhani-Medium';
+    src: url('/fonts/Rajdhani-Regular.ttf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+@font-face {
+    font-family: 'SairaCondensed';
+    src: url('/fonts/SairaCondensed-Regular.ttf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
