@@ -99,3 +99,29 @@
     src: url('/fonts/SairaCondensed-Regular.ttf') format('opentype');
     /* Additional font properties (e.g., font-weight, font-style) can be specified here */
 }
+@font-face {
+    font-family: 'guildof';
+    src: url('/fonts/guildof.ttf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+
+@font-face {
+    font-family: 'Opinio';
+    src: url('/fonts/Opinio-PersonalUse.otf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+@font-face {
+    font-family: 'Fabulist';
+    src: url('/fonts/Fabulist_Personal_use.otf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+@font-face {
+    font-family: 'Desiras';
+    src: url('/fonts/DesirasNonCommercial.otf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+@font-face {
+    font-family: 'android';
+    src: url('/fonts/androidnation.ttf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}

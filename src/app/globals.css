@@ -3,26 +3,62 @@
 @tailwind utilities;
 
 @keyframes bottomUp {
-  from {
+  0% {
     transform: translateY(100%);
   }
-  to {
+  20% {
     transform: translateY(0%);
+  }
+  30% {
+    transform: translateY(0%);
+  }
+  40% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  60% {
+    transform: translateY(0%);
+  }
+  70% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(0%);
+  }  
+  100% {
+    transform: translateY(-100%);
   }
 }
 
-path{
-  animation: bottomUp 1s ease-in-out;
+@keyframes InvisibleIt {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
 }
 
-.ml15 {
-  /* font-weight: 800; */
-  /* font-size: 3.8em; */
-  /* text-transform: uppercase; */
-  /* letter-spacing: 0.5em; */
+@keyframes expand {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+
 }
 
-.ml15 .word {
-  display: inline-block;
-  line-height: 1em;
+.invisible-it{
+  animation: InvisibleIt 1s ease;
+}
+
+.HomePageGraphicText{
+  animation: expand 1.3s ease-in-out;
+}
+
+.bottom-up{
+  animation: bottomUp 3s ease-out;
 }

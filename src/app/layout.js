@@ -13,7 +13,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        {/* <link rel="preload" href="/images/backgrounds/artistic-blurry-colorful-wallpaper-background (2).webp" as="image" /> */}
+        <link rel="preload" href="/images/personal-images/landscape.webp" as="image" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>

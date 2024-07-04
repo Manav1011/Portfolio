@@ -2,19 +2,19 @@
 import {useEffect} from 'react'
 
 function AnimateHeading() {
-  return (
-    useEffect(() => {
-        anime.timeline()
-  .add({
-    targets: '.ml15 .word',
-    scale: [14,1],
-    opacity: [0,1],
-    easing: "easeOutCirc",
-    duration: 800,
-    delay: (el, i) => 800 * i
-  })
-    },[])
-  )
+  useEffect(() => {
+    let HomePageGraphicText = document.getElementById('HomePageGraphicText')
+    HomePageGraphicText.classList.remove('opacity-0')
+    HomePageGraphicText.classList.add('HomePageGraphicText')
+    let PreLoadGraphic = document.getElementById('PreLoadGraphic')
+    setTimeout(async () => {
+      PreLoadGraphic.classList.add('invisible-it')
+      setTimeout(async () => {
+        PreLoadGraphic.remove()
+      }, 900);
+    },2000) 
+  },[])
+  return null
 }
 
 export default AnimateHeading
