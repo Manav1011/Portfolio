@@ -1,6 +1,6 @@
 async function PreLoadGraphic() {
   return (
-    <div className="h-[100dvh] fixed top-0 w-screen overflow-hidden" id="PreLoadGraphic" style={{
+    <div className="h-[100dvh] fixed top-0 w-screen z-50 overflow-hidden" id="PreLoadGraphic" style={{
       backgroundImage:'url("/images/personal-images/landscape.webp")',
       backgroundPosition:'center',
       backgroundSize:'cover'

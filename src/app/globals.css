@@ -32,6 +32,15 @@
   }
 }
 
+@keyframes rigtToLeftRoll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
 @keyframes InvisibleIt {
   from {
     transform: translateY(0%);
@@ -51,6 +60,40 @@
 
 }
 
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+
+}
+
+@keyframes invisibleToLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+
+}
+
+.slideLeft{
+  animation:slideLeft 0.5s ease-in;
+}
+
 .invisible-it{
   animation: InvisibleIt 1s ease;
 }
@@ -61,4 +104,13 @@
 
 .bottom-up{
   animation: bottomUp 3s ease-out;
+}
+
+.rigtToLeftRoll{
+  animation: rigtToLeftRoll 20s linear infinite; /* Adjust the duration and timing function as needed */
+  ;
+}
+
+.second-skill-delay{
+  animation-delay: 2.5s;
 }

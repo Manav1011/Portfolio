@@ -23,7 +23,7 @@ async function MainGraphic() {
         <WhatDoIDo/>
         <NavigationList/>
         <AboutSection/>
-        <LinkSection/>
+        <LinkSection/>        
       </div>
     </section>
   );
