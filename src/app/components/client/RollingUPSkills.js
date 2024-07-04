@@ -4,25 +4,23 @@ function RollingUPSkills() {
     useEffect(() => {
         const Skills = document.getElementsByClassName("rolling-up-skills");
         let currentIndex = 0;
-        let intervalID = null
-    
+        if(window.rollingInterval){          
+          clearInterval(window.rollingInterval)
+        }
         function showNextSkill() {   
-          if(Skills){
+          if(Skills){            
             try{
               // Hide current quote
               Skills[currentIndex].classList.add("hidden");
               // Calculate index of next quote
               currentIndex = (currentIndex + 1) % Skills.length;          
               Skills[currentIndex].classList.remove("hidden");
-            }catch(err){
-              clearInterval(intervalID) 
+            }catch(err){              
             }
-          }else{
-            clearInterval(intervalID)
           }
         }        
         Skills[currentIndex].classList.remove("hidden");        
-        intervalID = setInterval(showNextSkill, 3000);    
+        window.rollingInterval = setInterval(showNextSkill, 3000);    
     }, []);
   return null
 }
