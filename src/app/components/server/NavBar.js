@@ -1,7 +1,7 @@
 import Link from "next/link"
 async function NavBar() {  
   return (
-    <section className="pl-2 pt-4 text-xl sm:text-4xl sm:pr-2 w-full absolute top-0 text-white z-20 flex gap-4 sm:gap-10 justify-start sm:justify-end" style={{
+    <section className="pl-2 pt-4 text-xl md:text-4xl md:pr-2 w-full absolute top-0 text-white z-20 flex gap-4 md:gap-10 justify-start md:justify-end" style={{
         fontFamily:'android'
     }}> 
           <Link href="/contact">

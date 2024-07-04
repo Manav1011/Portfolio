@@ -15,8 +15,10 @@ function RollingUPSkills() {
               currentIndex = (currentIndex + 1) % Skills.length;          
               Skills[currentIndex].classList.remove("hidden");
             }catch(err){
-              clearInterval(intervalID)
+              clearInterval(intervalID) 
             }
+          }else{
+            clearInterval(intervalID)
           }
         }        
         Skills[currentIndex].classList.remove("hidden");        

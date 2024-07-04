@@ -4,13 +4,23 @@ import Image from "next/image";
 import GoBackArrow from "../components/server/GoBackArrow";
 async function page() {
   return (
-    <section className="h-[100dvh] w-screen overflow-hidden bg-gray-900 z-30 absolute">
-      <div className="w-full flex justify-start ml-4 mt-4 items-center fixed top-0 slideLeft">
+    <section className="h-[100dvh] w-screen overflow-hidden bg-gray-900 z-30 absolute">    
+    <Link href="/"className="fixed z-50 inline-block p-px font-semibold leading-6 text-white no-underline bg-gray-800 shadow-2xl ml-2 mt-2 cursor-pointer group rounded-xl shadow-zinc-900">
+  <span className="absolute inset-0 overflow-hidden rounded-xl">
+    <span className="absolute inset-0 rounded-xl bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
+  </span>
+  <div className="relative z-10 flex items-center px-6  space-x-2 rounded-xl bg-gray-950/50 ring-1 ring-white/10 ">
+  <GoBackArrow/>
+  </div>
+  <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-gray-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40" />
+</Link>
+
+      {/* <div className="fixed z-50 relative inline-block p-px font-semibold leading-6 text-white no-underline bg-gray-800 shadow-2xl cursor-pointer group rounded-xl shadow-zinc-900 slideLeft">
       <Link href="/">
         <GoBackArrow/>
       </Link>
-      </div>
-      <div className="mt-10 h-full w-full flex flex-col justify-center gap-20  items-start select-none slideLeft">
+      </div> */}
+      <div className="h-full w-full flex flex-col justify-around   items-start select-none slideLeft">
         <div
           className="text-7xl max-w-100 overflow-hidden text-center flex justify-start items-start flex-col"
           style={{
@@ -68,7 +78,7 @@ async function page() {
           <h1 className="text-white">+91 99257 17005</h1>
           <section className="flex items-center gap-4 w-full justify-center">
             <Link href="https://github.com/Manav1011" target="_blank">
-              <Image
+              <Image alt="Image Not Fonund"
                 width={32}
                 height={32}
                 className=""
@@ -79,7 +89,7 @@ async function page() {
               href="https://www.linkedin.com/in/manav-shah-97185a24a"
               target="_blank"
             >
-              <Image
+              <Image alt="Image Not Fonund"
                 width={40}
                 height={40}
                 src="/images/icons/icons8-linkedin (1).svg"
@@ -89,21 +99,21 @@ async function page() {
               href="https://www.instagram.com/manav_shah1011"
               target="_blank"
             >
-              <Image
+              <Image alt="Image Not Fonund"
                 width={32}
                 height={32}
                 src="/images/icons/icons8-instagram-50.png"
               />
             </Link>
             <Link href="https://x.com/Manav_1011" target="_blank">
-              <Image
+              <Image alt="Image Not Fonund"
                 width={32}
                 height={32}
                 src="/images/icons/icons8-twitter-50.png"
               />
             </Link>
             <Link href="mailto:manavshah1011.ms@gmail.com" target="_blank">
-              <Image
+              <Image alt="Image Not Fonund"
                 width={32}
                 height={32}
                 src="/images/icons/icons8-mail-48.png"
