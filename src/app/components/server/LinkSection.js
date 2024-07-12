@@ -3,7 +3,7 @@ import Link from "next/link";
 async function LinkSection() {
   return (
     <section
-      className="flex flex-col items-center gap-4 justify-center sm:justify-center fixed sm:right-4 top-4 right-2 h-full slideLeft hidden"
+      className="flex flex-col items-center gap-4 justify-center sm:justify-center fixed sm:right-4 -top-4 xss:top-4 right-2 h-full slideLeft"
       id="LinkSection"
     >
       <Link href="https://github.com/Manav1011" target="_blank">
@@ -24,7 +24,7 @@ async function LinkSection() {
           width={40}
           height={40}
           className="md:w-12 lg:w-8 h-auto"
-          src="/images/icons/icons8-linkedin (1).svg"
+          src="/images/icons/linkedin-main.svg"
         />
       </Link>
       <Link href="https://www.instagram.com/manav_shah1011" target="_blank">

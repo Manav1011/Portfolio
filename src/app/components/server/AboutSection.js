@@ -36,7 +36,7 @@ async function AboutSection() {
             ABOUT
           </span>
           <span
-            className="hover:text-black ease-in-out duration-500 text-slate-200 text-[0.70rem] xss:text-sm sm:text-2xl md:text-4xl lg:text-xl"
+            className="ease-in-out duration-500 text-slate-200 text-xs xss:text-sm sm:text-2xl md:text-4xl lg:text-xl"
             style={{ fontFamily: "BebasNeue" }}
           >
             A Dedicated full-stack developer specializing in combining front-end

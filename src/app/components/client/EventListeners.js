@@ -10,7 +10,7 @@ function EventListeners() {
             document.getElementById('horizontal-line-projects').classList.add('horizontal-line-to-full')
             setTimeout(() => {
                 router.push('/projects')
-            }, 800);
+            }, 500);
         });
     }, []);
   return null
