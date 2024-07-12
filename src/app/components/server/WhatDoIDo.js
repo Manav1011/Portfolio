@@ -2,7 +2,7 @@ import RollingUPSkills from "../client/RollingUPSkills"
 async function WhatDoIDo() {
   return (
     <>
-    <section className="text-white select-none z-10 pl-20 pt-10 text-6xl text-right md:text-left md:text-8xl absolute right-0 md:left-0" style={{
+    <section className="text-white select-none z-10 pl-20 pt-14 text-6xl text-right md:text-left md:text-8xl absolute right-0 md:left-0" style={{
         fontFamily:'Anton'
     }}>
         <div>I DO </div> 

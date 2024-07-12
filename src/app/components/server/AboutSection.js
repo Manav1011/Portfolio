@@ -8,15 +8,25 @@ async function AboutSection() {
     >
       <section className="w-full lg:w-1/2 text-slate-200 text-justify pl-2">
         <div
-          className="font-light pr-2 text-2xl w-1/2 horizontal-line lg:w-full border-b-4 border-orange-500 text-end mb-4 lg:-top-16 xss:text-2xl sm:text-3xl lg:text-5xl flex gap-2 text-slate-200  flex-row justify-end items-center"
+          className="font-light pr-2  text-2xl w-1/2 horizontal-line lg:w-full border-b-4 border-orange-500 text-end mb-4 lg:-top-16 xss:text-2xl sm:text-3xl lg:text-5xl flex gap-2 text-slate-200  flex-row justify-end items-center"
           style={{
             fontFamily: "android",
           }}
           id="horizontal-line-projects"
-        >        
+        >
           <h1 className=" cursor-pointer select-none" id="project-button">
             Projects
-          </h1>        
+          </h1>
+          <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width={20}
+              height={20}
+              fill="currentColor"
+              className="bi bi-sign-turn-right-fill"
+              viewBox="0 0 16 16"
+            >
+              <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098zM9 8.466V7H7.5A1.5 1.5 0 0 0 6 8.5V11H5V8.5A2.5 2.5 0 0 1 7.5 6H9V4.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L9.41 8.658A.25.25 0 0 1 9 8.466" />
+            </svg>
         </div>
         <div className="select-none pr-2">
           <span
@@ -26,7 +36,7 @@ async function AboutSection() {
             ABOUT
           </span>
           <span
-            className="hover:text-black ease-in-out duration-500 text-slate-200 text-xs xss:text-sm sm:text-2xl md:text-4xl lg:text-xl"
+            className="hover:text-black ease-in-out duration-500 text-slate-200 text-[0.70rem] xss:text-sm sm:text-2xl md:text-4xl lg:text-xl"
             style={{ fontFamily: "BebasNeue" }}
           >
             A Dedicated full-stack developer specializing in combining front-end
@@ -90,7 +100,7 @@ async function AboutSection() {
           </div>
         </div>
       </section>
-      <EventListeners/>
+      <EventListeners />
     </div>
   );
 }

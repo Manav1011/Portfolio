@@ -2,12 +2,11 @@ import NavBar from "../components/server/NavBar";
 import LinkSection from "../components/server/LinkSection";
 import InitialLoadingProjects from "../components/client/InitialLoadingProjects";
 import WhatDoIDo from "../components/server/WhatDoIDo";
-import Image from "next/image";
 
 async function page() {
   return (
-    <>
-      <NavBar />
+    <>      
+      <NavBar home={true} />
       <WhatDoIDo />
       <section
         className="h-[100dvh] w-full overflow-hidden absolute flex items-end bg-cover pr-20"
@@ -16,52 +15,54 @@ async function page() {
           backgroundPosition: "center",
         }}
       >
-        <div className="flex w-full justify-center items-start">
-          <div className="w-3/5 overflow-hidden flex justify-center p-10">
+        <div className="flex w-full max-lg:h-full  justify-center items-center">
+          <div className="w-3/5 hidden lg:flex overflow-hidden justify-center pr-28">
             <div className="">
-              <Image
+              <img
                 width={1920}
                 height={1080}
-                className="w-full h-auto rounded-2xl"
-                src="/images/projects/swasau.webp"
+                id="project-graphic"
+                loading="lazy"
+                className="max-lg:hidden w-full h-auto rounded-tr-2xl rounded-b-none"
+                src="/images/projects/gic.webp"
               />
             </div>
           </div>
-          <div className="w-2/5 flex text-end flex-col">
+          <div className="lg:w-2/5 w-full max-lg:mx-10 flex text-end flex-col">
             <div
               className="font-light text-2xl w-full border-b-4 border-orange-500  xss:text-2xl sm:text-3xl lg:text-5xl flex gap-2 text-slate-200"
               style={{
                 fontFamily: "android",
               }}
             >
-              <h1 className="select-none w-full  text-right slideRight">
+              <h1 className="select-none w-full  text-left lg:text-right slideRight">
                 Projects
               </h1>
             </div>
             <div
-              className="flex flex-col text-slate-400 max-h-[50dvh] overflow-y-scroll"
+              className="flex flex-col text-slate-400 max-h-[50dvh] lg:overflow-y-scroll gap-2"
               style={{
                 fontFamily: "bebas",
               }}
               id="projectSection"
             >
-              <div className="font-light text-2xl w-full border-b-2 border-white transition-all duration-300 hover:scale-125 xss:text-2xl sm:text-3xl lg:text-4xl flex gap-2 ">
-                <h1 className="select-none w-full  text-right">
-                  REAL-TIME WEATHER MONITORING & DISPLAY
-                </h1>
-              </div>
-              <div className="font-light text-2xl w-full border-b-2 border-white transition-all duration-300 hover:scale-125 xss:text-2xl sm:text-3xl lg:text-4xl flex gap-2 ">
-                <h1 className="select-none w-full  text-right">
+            <div className="font-light text-2xl lg:w-full project-title border-b-2 border-white lg:transition-all lg:duration-300 lg:hover:scale-125 xss:text-2xl sm:text-3xl lg:text-4xl flex gap-2 " data-title="gic">
+                <h1 className="select-none w-full text-left lg:text-right">
                   GTU INNOVATION COUNCIL
                 </h1>
               </div>
-              <div className="font-light text-2xl w-full border-b-2 border-white transition-all duration-300 hover:scale-125 xss:text-2xl sm:text-3xl lg:text-4xl flex gap-2 ">
-                <h1 className="select-none w-full  text-right">SMARTROLL</h1>
-              </div>
-              <div className="font-light text-2xl w-full border-b-2 border-white  transition-all duration-300 hover:scale-125 xss:text-2xl sm:text-3xl lg:text-4xl flex gap-2 ">
-                <h1 className="select-none w-full  text-right">
-                  PORTFOLIO SITE FOR SWASAU TECHNOLOGY
+             <div className="font-light text-2xl lg:w-full project-title border-b-2 border-white  lg:transition-all lg:duration-300 lg:hover:scale-125 xss:text-2xl sm:text-3xl lg:text-4xl flex gap-2 " data-title="swasautech">
+                <h1 className="select-none w-full  text-left lg:text-right">
+                  SWASAUTECH PORTFOLIO
                 </h1>
+              </div>
+              <div className="font-light text-2xl lg:w-full project-title border-b-2 border-white lg:transition-all lg:duration-300 lg:hover:scale-125 xss:text-2xl sm:text-3xl lg:text-4xl flex gap-2 " data-title="wms">
+                <h1 className="select-none w-full  text-left lg:text-right">
+                  REAL-TIME WEATHER MONITORING & DISPLAY
+                </h1>
+              </div>
+              <div className="font-light text-2xl lg:w-full project-title border-b-2 border-white lg:transition-all lg:duration-300 lg:hover:scale-125 xss:text-2xl sm:text-3xl lg:text-4xl flex gap-2 " data-title="smartroll">
+                <h1 className="select-none w-full text-left lg:text-right">SMARTROLL</h1>
               </div>
             </div>
           </div>

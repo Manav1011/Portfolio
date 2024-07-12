@@ -129,10 +129,10 @@
 @media (min-width: 340px) {
   @keyframes expandWidthtoFull {   
     from {
-      width: 50%;
+      width: 55%;
     }
     to {
-      width: 150%;
+      width: 155%;
     }
   }
   @keyframes expandWidth {
@@ -140,7 +140,7 @@
       width: 0;
     }
     to {
-      width: 50%;
+      width: 55%;
     }
   }
 }
