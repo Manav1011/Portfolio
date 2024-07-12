@@ -71,7 +71,7 @@ async function page() {
         <div
           className="flex flex-col gap-4 text-center w-full text-2xl sm:text-5xl"
           style={{
-            fontFamily: "Rajdhani-Medium",
+            fontFamily: "bebas",
           }}
         >
           <h1 className="text-slate-400">manavshah1011.ms@gmail.com</h1>

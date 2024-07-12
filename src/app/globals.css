@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+
+::-webkit-scrollbar {
+  width: 8px;  
+  height: 10%;
+  background: transparent;
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-track {
+  background: black;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;    
+  background: rgb(234 88 12);
+}
+
 @keyframes bottomUp {
   0% {
     transform: translateY(100%);
@@ -90,8 +108,85 @@
 
 }
 
+@keyframes bottomTotop {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes topTobottom {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@media (min-width: 340px) {
+  @keyframes expandWidthtoFull {   
+    from {
+      width: 50%;
+    }
+    to {
+      width: 150%;
+    }
+  }
+  @keyframes expandWidth {
+    from {
+      width: 0;
+    }
+    to {
+      width: 50%;
+    }
+  }
+}
+@media (min-width: 1025px) {
+  @keyframes expandWidthtoFull {   
+    from {
+      width: 100%;
+    }
+    to {
+      width: 250%;
+    }
+  }
+  
+  @keyframes expandWidth {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+}
+}
+
+.horizontal-line-to-full{
+  animation: expandWidthtoFull 1s forwards;
+}
+
+
+.horizontal-line{
+  animation: expandWidth 2s forwards;
+}
+
+.topTobottom{
+  animation:topTobottom 1s forwards;
+}
+
+.bottomTotop{
+  animation:bottomTotop 1s forwards;
+}
+
+.slideRight{
+  animation:slideRight 1s forwards;
+}
+
 .slideLeft{
-  animation:slideLeft 0.5s ease-in;
+  animation:slideLeft 1s forwards;
 }
 
 .invisible-it{

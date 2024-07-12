@@ -21,7 +21,7 @@ async function MainGraphic() {
       >
         <NavBar/>
         <WhatDoIDo/>
-        <NavigationList/>
+        {/* <NavigationList/> */}
         <AboutSection/>
         <LinkSection/>        
       </div>

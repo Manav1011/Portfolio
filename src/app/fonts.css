@@ -123,5 +123,13 @@
 @font-face {
     font-family: 'android';
     src: url('/fonts/androidnation.ttf') format('opentype');
+    font-style:italic;
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url('/fonts/Bebas-Regular.ttf') format('opentype');
+    font-weight: 100;
     /* Additional font properties (e.g., font-weight, font-style) can be specified here */
 }
