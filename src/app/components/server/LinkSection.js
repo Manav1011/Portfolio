@@ -23,7 +23,7 @@ async function LinkSection() {
           alt="Image Not Fonund"
           width={40}
           height={40}
-          className="md:w-12 lg:w-8 h-auto"
+          className="md:w-14 lg:w-10 h-auto"
           src="/images/icons/linkedin-main.svg"
         />
       </Link>
