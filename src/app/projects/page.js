@@ -2,10 +2,31 @@ import NavBar from "../components/server/NavBar";
 import LinkSection from "../components/server/LinkSection";
 import InitialLoadingProjects from "../components/client/InitialLoadingProjects";
 import WhatDoIDo from "../components/server/WhatDoIDo";
+import Link from "next/link";
 
 async function page() {
+  const ProjectsList = await fetch(process.env.CONTENTFUL_URL, {
+    cache: "no-cache",
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${process.env.CONTENTFUL_AUTH}`,
+    },
+    body: JSON.stringify({
+      query: `query {
+  projectListCollection{
+    items{      
+    _id,
+      title,
+      slug
+    }
+  }
+}`,
+      variables: null,
+    }),
+  }).then(res => res.json()).then(data => data.data.projectListCollection.items).catch(error => console.log(error))      
   return (
-    <>      
+    <>
       <NavBar home={true} />
       <WhatDoIDo />
       <section
@@ -46,24 +67,17 @@ async function page() {
               }}
               id="projectSection"
             >
-            <div className="font-light text-2xl lg:w-full project-title border-b-2 border-white lg:transition-all lg:duration-300 lg:hover:scale-125 xss:text-2xl sm:text-3xl lg:text-4xl flex gap-2 " data-title="gic">
-                <h1 className="select-none w-full text-left lg:text-right">
-                  GTU INNOVATION COUNCIL
-                </h1>
+            {ProjectsList.map((el,index) => (
+              <div
+                className="font-light text-2xl lg:w-full project-title border-b-2 border-white lg:transition-all lg:duration-300 lg:hover:scale-125 xss:text-2xl sm:text-3xl lg:text-4xl flex gap-2 " 
+                data-title={el.slug}
+                key={index}
+              >
+                <Link className="select-none w-full text-left lg:text-right" href={`/projects/${el.slug}`}>
+                  {el.title}
+                </Link>
               </div>
-             <div className="font-light text-2xl lg:w-full project-title border-b-2 border-white  lg:transition-all lg:duration-300 lg:hover:scale-125 xss:text-2xl sm:text-3xl lg:text-4xl flex gap-2 " data-title="swasautech">
-                <h1 className="select-none w-full  text-left lg:text-right">
-                  SWASAUTECH PORTFOLIO
-                </h1>
-              </div>
-              <div className="font-light text-2xl lg:w-full project-title border-b-2 border-white lg:transition-all lg:duration-300 lg:hover:scale-125 xss:text-2xl sm:text-3xl lg:text-4xl flex gap-2 " data-title="wms">
-                <h1 className="select-none w-full  text-left lg:text-right">
-                  REAL-TIME WEATHER MONITORING & DISPLAY
-                </h1>
-              </div>
-              <div className="font-light text-2xl lg:w-full project-title border-b-2 border-white lg:transition-all lg:duration-300 lg:hover:scale-125 xss:text-2xl sm:text-3xl lg:text-4xl flex gap-2 " data-title="smartroll">
-                <h1 className="select-none w-full text-left lg:text-right">SMARTROLL</h1>
-              </div>
+            ))}
             </div>
           </div>
         </div>

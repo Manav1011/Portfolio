@@ -195,6 +195,14 @@
     }
 }
 }
+@keyframes popUP {   
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+}
 
 .horizontal-line-to-full{
   animation: expandWidthtoFull 1s forwards;
@@ -240,4 +248,8 @@
 
 .second-skill-delay{
   animation-delay: 2.5s;
+}
+
+.popUp{
+  animation: popUP 2s ease-in;
 }

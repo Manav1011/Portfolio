@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-
 import EventListeners from "../client/EventListeners";
 async function AboutSection() {
   return (
