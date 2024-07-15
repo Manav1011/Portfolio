@@ -10,9 +10,12 @@
   },
   "dependencies": {
     "dotenv": "^16.4.5",
+    "github-activity-feed": "^0.3.0",
+    "gitlab-calendar": "^2.0.1",
     "next": "14.2.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-github-calendar": "^4.1.6"
   },
   "devDependencies": {
     "postcss": "^8",

@@ -108,6 +108,20 @@
 
 }
 
+@keyframes slideRightProjectTitle {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+
+}
+
+.slideRightProjectTitle{
+  animation: slideRightProjectTitle 1s forwards;
+}
+
 @keyframes bottomTotop {
   from {
     transform: translateY(100%);
@@ -132,7 +146,7 @@
       width: 65%;
     }
     to {
-      width: 165%;
+      width: 15%;
     }
   }
   @keyframes expandWidth {

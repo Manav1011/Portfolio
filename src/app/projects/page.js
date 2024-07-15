@@ -30,12 +30,12 @@ async function page() {
           </div>
           <div className="lg:w-2/5 w-full max-lg:mx-10 flex text-end flex-col">
             <div
-              className="font-light text-2xl w-full border-b-4 border-orange-500  xss:text-2xl sm:text-3xl lg:text-5xl flex gap-2 text-slate-200"
+              className="font-light text-2xl w-full border-b-4 border-orange-500 z-20 xss:text-2xl sm:text-3xl lg:text-5xl flex gap-2 text-slate-200"
               style={{
                 fontFamily: "android",
               }}
             >
-              <h1 className="select-none w-full  text-left lg:text-right slideRight">
+              <h1 className="select-none w-full  text-left lg:text-right slideRightProjectTitle">
                 Projects
               </h1>
             </div>

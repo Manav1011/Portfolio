@@ -1,0 +1,53 @@
+
+/* Extra small devices (phones, 340px and up) */
+@media (min-width: 340px) and (max-width: 389px){
+  /* Your styles for xs devices */
+}
+
+/* Extra extra small devices (smaller phones, 390px and up) */
+@media (min-width: 390px) and (max-width: 639px){
+  /* Your styles for xss devices */
+  .react-activity-calendar__calendar{
+    width: 370px;
+    height: 100px;
+  }  
+}
+
+/* Small devices (portrait tablets and large phones, 640px and up) */
+@media (min-width: 640px) and (max-width: 769px) {
+  /* Your styles for sm devices */
+  .react-activity-calendar__calendar{
+    width: 1000px;
+  }  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1023px)   {
+  /* Your styles for md devices */
+  .react-activity-calendar__calendar{
+    width: 600px;
+  }  
+}
+
+/* Large devices (laptops/desktops, 1025px and up) */
+@media (min-width: 1024px) and (max-width: 1279px)  {
+  /* Your styles for lg devices */
+  .react-activity-calendar__calendar{
+    width: 800px;
+  }  
+}
+
+/* Extra large devices (large laptops and desktops, 1280px and up) */
+@media (min-width: 1280px )  and (max-width: 1535px)  {
+  .react-activity-calendar__calendar{
+    width: 200px;
+  }  
+}
+
+/* 2x extra large devices (big screens, 1536px and up) */
+@media (min-width: 1536px) {
+  /* Your styles for 2xl devices */
+  .react-activity-calendar__calendar{
+      width: 750px;
+  }  
+}

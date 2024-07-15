@@ -3,6 +3,7 @@ import NavBar from "./NavBar";
 import NavigationList from "./NavigationList";
 import WhatDoIDo from "./WhatDoIDo";
 import LinkSection from "./LinkSection";
+import LuffyGraphic from "./LuffyGraphic";
 async function MainGraphic() {
   return (
     <section
@@ -22,6 +23,7 @@ async function MainGraphic() {
         <NavBar/>
         <WhatDoIDo/>
         {/* <NavigationList/> */}
+        <LuffyGraphic/>
         <AboutSection/>
         <LinkSection/>        
       </div>
