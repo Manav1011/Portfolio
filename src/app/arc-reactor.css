@@ -2,51 +2,88 @@
 /* Extra small devices (phones, 340px and up) */
 @media (min-width: 340px) and (max-width: 389px){
   /* Your styles for xs devices */
+  .styles-module_container__GBNxC{
+    margin-left: 0.4rem;
+    width:80% !important;
+    text-align: left;
+  }
+  .react-activity-calendar__legend-colors{
+    margin-left: 0 !important;
+  }
+  .react-activity-calendar__calendar{
+    width: 100%;
+  }  
 }
 
 /* Extra extra small devices (smaller phones, 390px and up) */
 @media (min-width: 390px) and (max-width: 639px){
   /* Your styles for xss devices */
+  .styles-module_container__GBNxC{
+    width: 100% !important;
+  }
+  .react-activity-calendar__footer{
+    display: flex;
+    flex-direction: column;    
+  }
+  .react-activity-calendar__count{
+    display: block;
+  }
+  .react-activity-calendar__legend-colors{
+    margin-left: 0 !important;
+  }
   .react-activity-calendar__calendar{
-    width: 370px;
-    height: 100px;
+    width: 100%;
   }  
 }
 
 /* Small devices (portrait tablets and large phones, 640px and up) */
-@media (min-width: 640px) and (max-width: 769px) {
+@media (min-width: 640px) and (max-width: 767px) {
   /* Your styles for sm devices */
+  .styles-module_container__GBNxC{
+    width: 100% !important;
+  }
   .react-activity-calendar__calendar{
-    width: 1000px;
+    width: 80%;
   }  
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 1023px)   {
-  /* Your styles for md devices */
+  .styles-module_container__GBNxC{
+    width: 85% !important;
+  }
   .react-activity-calendar__calendar{
-    width: 600px;
+    width: 100%;
   }  
 }
 
 /* Large devices (laptops/desktops, 1025px and up) */
 @media (min-width: 1024px) and (max-width: 1279px)  {
   /* Your styles for lg devices */
+  .styles-module_container__GBNxC{
+    width: 100% !important;
+  }
   .react-activity-calendar__calendar{
-    width: 800px;
+    width: 100%;
   }  
 }
 
 /* Extra large devices (large laptops and desktops, 1280px and up) */
 @media (min-width: 1280px )  and (max-width: 1535px)  {
+  .styles-module_container__GBNxC{
+    width: 600px !important;
+  }
   .react-activity-calendar__calendar{
-    width: 200px;
+    width: 600px;
   }  
 }
 
 /* 2x extra large devices (big screens, 1536px and up) */
 @media (min-width: 1536px) {
-  /* Your styles for 2xl devices */
+  /* Your styles for 2xl devices */  
+  .styles-module_container__GBNxC{
+    width: 750px !important;
+  }
   .react-activity-calendar__calendar{
       width: 750px;
   }  
