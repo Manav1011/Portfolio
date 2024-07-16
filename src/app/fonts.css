@@ -133,3 +133,8 @@
     font-weight: 100;
     /* Additional font properties (e.g., font-weight, font-style) can be specified here */
 }
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('/fonts/Avenir Black.ttf') format('opentype');    
+}
