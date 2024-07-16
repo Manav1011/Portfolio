@@ -51,7 +51,7 @@ query($slug:String!){
       >        
         <div className="bg-black h-full w-full bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 overflow-scroll" id="project-detail-scrolling-section">
           <div className="w-full flex justify-start flex-col items-center">
-            <div className="flex sm:w-3/5 xs:w-full xs:px-2 lg:p-0">
+            <div className="flex sm:w-3/5 xs:w-full xs:px-2 lg:p-0 topTobottom">
               <Image
                 src={ProjectDetail.preview.url}
                 width={1980}
