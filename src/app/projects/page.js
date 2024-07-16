@@ -69,7 +69,7 @@ async function page() {
             >
             {ProjectsList.map((el,index) => (
               <div
-                className="font-light text-2xl slideRightProjectTitle lg:w-full project-title border-b-2 border-white lg:transition-all lg:duration-300 lg:hover:scale-125 xss:text-2xl sm:text-3xl lg:text-4xl flex gap-2 " 
+                className="font-light text-2xl slideRightProjectTitle lg:w-full project-title border-b-2 border-white lg:transition-all lg:duration-300 xss:text-2xl sm:text-3xl lg:text-4xl flex gap-2 " 
                 data-title={el.slug}
                 key={index}
               >
