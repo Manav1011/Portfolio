@@ -42,13 +42,7 @@ query($slug:String!){
   return (
     <>
       <section
-        className="w-full h-[100dvh] overflow-hidden"
-        style={{
-          backgroundImage: 'url("/images/backgrounds/6386.jpg")',
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundAttachment: "fixed",
-        }}
+        className="w-full h-[100dvh] overflow-hidden bg-gradient-to-b from-slate-900 to-indigo-800"
       >        
         <div className="bg-black h-full w-full bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 overflow-scroll" id="project-detail-scrolling-section">
           <div className="w-full flex justify-start flex-col items-center">
