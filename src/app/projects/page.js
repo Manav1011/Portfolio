@@ -30,7 +30,7 @@ async function page() {
       <NavBar home={true} />
       <WhatDoIDo />
       <section
-        className="h-[100dvh] w-full overflow-hidden absolute flex items-end bg-cover pr-20"
+        className="h-[100dvh] w-full overflow-hidden absolute flex items-end bg-cover pr-16 pl-2 md:pl-0"
         style={{
           backgroundImage: "url('/images/backgrounds/orange-black.webp')",
           backgroundPosition: "center",
@@ -49,7 +49,7 @@ async function page() {
               />
             </div>
           </div>
-          <div className="lg:w-2/5 w-full max-lg:mx-10 flex text-end flex-col">
+          <div className="lg:w-2/5 w-full flex text-end flex-col">
             <div
               className="font-light text-2xl w-full border-b-4 border-orange-500 z-20 xss:text-2xl sm:text-3xl lg:text-5xl flex gap-2 text-slate-200"
               style={{

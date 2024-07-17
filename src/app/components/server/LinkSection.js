@@ -3,7 +3,7 @@ import Link from "next/link";
 async function LinkSection({page}) {
   return (
     <section
-      className="flex flex-col items-center gap-4 justify-center sm:justify-center fixed sm:right-4 -top-4 xss:top-4 right-2 h-full slideLeft"
+      className="flex flex-col items-center gap-4 justify-center sm:justify-center fixed sm:right-4 -top-4 xs:top-4 right-2 h-full slideLeft"
       id="LinkSection"
     >
       <Link href="https://github.com/Manav1011" target="_blank">

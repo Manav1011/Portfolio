@@ -1,6 +1,7 @@
 import LinkSection from "../../components/server/LinkSection";
 import Image from "next/image";
 import InitialProjectDetail from "@/app/components/client/InitialProjectDetail";
+import ImageSkeletonLoader from "@/app/components/client/ImageSkeletonLoader";
 async function page({ params }) {
   const ProjectDetail = await fetch(process.env.CONTENTFUL_URL, {
     cache: "no-cache",
@@ -57,7 +58,7 @@ query($slug:String!){
                 width={1980}
                 height={1080}
                 alt="Preview Not Found"
-                className="w-full h-auto rounded-b-3xl rounded-none"
+                className="w-full h-auto rounded-b-3xl rounded-none"                
               />
             </div>
             <div className="flex md:w-3/5 xs:w-full xs:mt-2 md:mt-0 justify-start text-left" style={{ fontFamily: "Anton" }}>
@@ -102,14 +103,17 @@ query($slug:String!){
               <div className="flex flex-col gap-4">
               {ProjectDetail.screensCollection.items.map((el,index) => (
                 <div className="flex w-full xs:pl-2 xs:pr-12 lg:p-0" key={index}>
-                  <Image 
+                <ImageSkeletonLoader width={1980} height={1080} src={el.url} className="rounded-2xl shadow-2xl"/>
+                  {/* <Image 
                     width={1980}
                     height={1080}                    
                     src={el.url}
                     alt="loading...."
                     loading="lazy"
-                    className="rounded-lg shadow-2xl"
-                  />
+                    onLoadingComplete={(e) => {
+                      console.log("Image loaded")
+                    }}
+                  /> */}
                 </div>
               ))}
               </div>
