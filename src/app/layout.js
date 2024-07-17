@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NextTopLoader from 'nextjs-toploader';
 import "./fonts.css";
+import PrintImageToConsole from "./components/client/PrintImageToConsole";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +25,8 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <NextTopLoader color="white" className="z-50" initialPosition={0.08} crawlSpeed={200} height={3} crawl={true} easing="ease" showSpinner={false} speed={200} shadow="0 0 10px #2299DD,0 0 5px #2299DD" zIndex={1600} showAtBottom={false} />
         {children}
-      </body>      
+      </body>     
+      <PrintImageToConsole />
     </html>
   );
 }
