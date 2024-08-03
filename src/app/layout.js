@@ -1,8 +1,7 @@
 import { Inter } from "next/font/google";
-import "./globals.css";
 import NextTopLoader from 'nextjs-toploader';
-import "./fonts.css";
 import PrintImageToConsole from "./components/client/PrintImageToConsole";
+import './tailwinds-config.css'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +14,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>            
+        <link rel="preload" href="/static/css/globals.css" as="style" />
+        <link rel="stylesheet" href="/static/css/globals.css" />
         <link rel="preload" href="/images/personal-images/landscape.webp" as="image" />
+        <link rel="preload" href="/static/css/fonts.css" as="style" />
+        <link rel="stylesheet" href="/static/css/fonts.css" />
         {/* <link rel="stylesheet" href="/static/css/github-activity.min.css" />
         <link rel="stylesheet" href="https://unpkg.com/octicons@4.4.0/build/font/octicons.css" />
         <link rel="stylesheet" href="/static/css/github-activity.dark.min.css" />
